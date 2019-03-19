@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Hello LiveReload!</h1>
+<script src="/js/index.js"></script>
+<script th:if="${T(com.example.demo.DevToolsUtil).isDeveloping()}">document.write('<script src="http://'
+  + location.host.split(':')[0]
+  + ':35729/livereload.js"></'
+  + 'script>')</script>
+</body>
+</html>
